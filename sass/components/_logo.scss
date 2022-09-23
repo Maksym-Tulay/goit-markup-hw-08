@@ -1,39 +1,83 @@
-.header__logo {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 94px;
+    .header__logo {
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 16px;
 
-    transition: color var(--main-transition-rule);
+        transition: color var(--main-transition-rule);
 
-    @extend %logo-font;
-    @include font (700, 26px, 1.19, 00.03em, var(--logo-text-color));
+        font-family: "Raleway", sans-serif;
+        @include font (700, 24px, 1.16, 00.03em, var(--logo-text-color));
+    }
 
-    /* outline: 2px solid blue; */
+    .logo__span {
+        font-family: "Raleway", sans-serif;
+        @include font (700, 24px, 1.16, 00.03em, var(--accent-blue-color));
+    }
+
+    .header__logo:hover,
+    .header__logo:focus {
+        color: var(--accent-blue-color);
+    }
+
+@media screen and (min-width: 768px) {
+    .header__logo {
+            padding-top: 26px;
+            padding-bottom: 26px;
+            margin-right: 87px;
+    }
 }
 
-.logo__span {
-    @extend %logo-font;
-    @include font (700, 26px, 1.19, 00.03em, var(--accent-blue-color));
+@media screen and (min-width: 1200px) {
+    .header__logo {
+        padding-top: 24px;
+        padding-bottom: 25px;
+        margin-right: 87px;
+
+        @include font (700, 26px, 1.19, 00.03em, var(--logo-text-color));    }
+
+    .logo__span {
+        @include font (700, 26px, 1.19, 00.03em, var(--accent-blue-color));
+    }
 }
 
-.header__logo:hover,
-.header__logo:focus {
-    color: var(--accent-blue-color);
-}
 
-.footer__logo {
-    display: block;
-    margin-top: 0;
-    margin-bottom: 20px;
 
-    transition: color var(--main-transition-rule);
+// .header__logo {
+//     display: block;
+//     // padding-top: 24px;
+//     // padding-bottom: 25px;
+//     margin-right: 87px;
 
-    @extend %logo-font;
-    @include font (700, 26px, 1.19, 00.03em, var(--body-background-color));
-}
+//     transition: color var(--main-transition-rule);
 
-.footer__logo:hover,
-.footer__logo:focus {
-    color: var(--accent-blue-color);
-}
+//     @extend %logo-font;
+//     @include font (700, 26px, 1.19, 00.03em, var(--logo-text-color));
+
+//     /* outline: 2px solid blue; */
+// }
+
+// .logo__span {
+//     @extend %logo-font;
+//     @include font (700, 26px, 1.19, 00.03em, var(--accent-blue-color));
+// }
+
+// .header__logo:hover,
+// .header__logo:focus {
+//     color: var(--accent-blue-color);
+// }
+
+// .footer__logo {
+//     display: block;
+//     margin-top: 0;
+//     margin-bottom: 20px;
+
+//     transition: color var(--main-transition-rule);
+
+//     @extend %logo-font;
+//     @include font (700, 26px, 1.19, 00.03em, var(--body-background-color));
+// }
+
+// .footer__logo:hover,
+// .footer__logo:focus {
+//     color: var(--accent-blue-color);
+// }

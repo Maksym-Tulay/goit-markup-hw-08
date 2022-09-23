@@ -35,9 +35,9 @@
     width: 18px;
     height: 18px;
 
-    transition: fill var(--main-transition-rule);
-
     fill: var(--body-text-color);
+
+    transition: fill var(--main-transition-rule);
 
     .modal-window__close-button:hover &,
     .modal-window__close-button:focus & {
