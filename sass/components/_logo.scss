@@ -1,0 +1,39 @@
+.header__logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 94px;
+
+    transition: color var(--main-transition-rule);
+
+    @extend %logo-font;
+    @include font (700, 26px, 1.19, 00.03em, var(--logo-text-color));
+
+    /* outline: 2px solid blue; */
+}
+
+.logo__span {
+    @extend %logo-font;
+    @include font (700, 26px, 1.19, 00.03em, var(--accent-blue-color));
+}
+
+.header__logo:hover,
+.header__logo:focus {
+    color: var(--accent-blue-color);
+}
+
+.footer__logo {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    transition: color var(--main-transition-rule);
+
+    @extend %logo-font;
+    @include font (700, 26px, 1.19, 00.03em, var(--body-background-color));
+}
+
+.footer__logo:hover,
+.footer__logo:focus {
+    color: var(--accent-blue-color);
+}

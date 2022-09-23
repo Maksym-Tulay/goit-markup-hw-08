@@ -1,0 +1,46 @@
+.index-hero {
+    margin-bottom: 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    max-width: 1600px;
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--hero-image-overlay-color);
+    background-image: linear-gradient(to right,
+            var(--hero-image-overlay-color),
+            var(--hero-image-overlay-color)),
+        url(../images/hero-image.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.index-hero__title {
+    width: 696px;
+    margin: 0 auto 30px auto;
+
+    @include font (900, 44px, 1.36, 00.06em, var(--body-background-color));
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.index-hero__button {
+    width: 216px;
+    height: 50px;
+
+    transition: background-color var(--main-transition-rule);
+
+    background-color: var(--accent-blue-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    @include font (700, 16px, 1.88, 00.06em, var(--body-background-color));
+
+    &:focus {
+         background-color: var(--accent-blue-color);
+    }
+}

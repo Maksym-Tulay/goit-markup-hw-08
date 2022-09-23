@@ -1,0 +1,60 @@
+.worklist-section {
+    margin: top 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    transition: color var(--main-transition-rule);
+}
+
+.worklist-title {
+    margin-bottom: 50px;
+
+    @include font (700, 36px, 1.17, 00.03em, var(--body-text-color));
+    text-align: center;
+}
+
+.worklist {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.worklist__link {
+    position: relative;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-blue-color);
+    }
+}
+
+.worklist__descr {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    height: 70px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(-50%, 0%);
+    opacity: 0;
+    transition: opacity var(--main-transition-rule);
+
+    @include font (700, 14px, 1.14, 00.03em, var(--body-background-color));
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--item-overlay-backgroundcolor);
+
+        .worklist__link:hover &,
+        .worklist__link:focus & {
+            opacity: 1;
+        }
+}
+
+.worklist__image {
+    display: block;
+}
