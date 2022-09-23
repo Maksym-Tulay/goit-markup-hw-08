@@ -1,7 +1,24 @@
-@import './utils/main';
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
 
-@import './base/main';
+@import './base/common';
+@import './base/section';
+@import './base/container';
 
-@import './components/main';
+@import './components/logo';
 
-@import './layout/main';
+@import './layout/page-header';
+@import './layout/page-footer';
+@import './layout/hero-section';
+@import './layout/advantages-section';
+@import './layout/worklist-section';
+@import './layout/teamlist-section';
+@import './layout/clientlist-section';
+
+@import './layout/portfolio-section';
+
+
+@import './layout/backdrop';
+@import './layout/modal-window';
+@import './layout/modal-form';
