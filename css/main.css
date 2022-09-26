@@ -232,6 +232,7 @@ textarea {
   }
   .mobile-menu__smlist {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding-top: 64px;
   }
