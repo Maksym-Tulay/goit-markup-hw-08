@@ -19,6 +19,22 @@
         color: var(--accent-blue-color);
     }
 
+    .footer__logo {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 20px;
+    
+        transition: color var(--main-transition-rule);
+    
+        font-family: "Raleway", sans-serif;
+        @include font (700, 24px, 1.16, 00.03em, var(--body-background-color));
+        }
+    
+        .footer__logo:hover,
+        .footer__logo:focus {
+            color: var(--accent-blue-color);
+        }
+
 @media screen and (min-width: 768px) {
     .header__logo {
             padding-top: 26px;
@@ -38,6 +54,11 @@
     .logo__span {
         @include font (700, 26px, 1.19, 00.03em, var(--accent-blue-color));
     }
+
+    .footer__logo{
+        @include font (700, 26px, 1.19, 00.03em, var(--body-background-color))
+    }
+
 }
 
 

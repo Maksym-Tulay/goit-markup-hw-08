@@ -122,6 +122,24 @@ textarea {
   color: var(--accent-blue-color);
 }
 
+.footer__logo {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  transition: color var(--main-transition-rule);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--body-background-color);
+}
+
+.footer__logo:hover,
+.footer__logo:focus {
+  color: var(--accent-blue-color);
+}
+
 @media screen and (min-width: 768px) {
   .header__logo {
     padding-top: 26px;
@@ -146,6 +164,13 @@ textarea {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-blue-color);
+  }
+  .footer__logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--body-background-color);
   }
 }
 @media screen and (max-width: 767px) {
@@ -398,18 +423,18 @@ textarea {
 }
 .page-footer {
   background-color: var(--footer-background-color);
+  text-align: center;
 }
 
 .page-footer__container {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  flex-direction: column;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .address-list__item {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 .address-list__item:last-child {
   margin-bottom: 0;
@@ -448,6 +473,7 @@ textarea {
 }
 
 .footer-smlist__call {
+  padding-top: 60px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -479,9 +505,12 @@ textarea {
 
 .footer-form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-form__call {
+  padding-top: 60px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -491,11 +520,15 @@ textarea {
   text-transform: uppercase;
 }
 
+.footer-form__label {
+  width: 100%;
+}
+
 .footer-form__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   border: 1px solid var(--footer-input-border-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;

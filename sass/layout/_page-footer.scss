@@ -1,21 +1,25 @@
 .page-footer {
     background-color: var(--footer-background-color);
+    text-align: center;
 }
 
 .page-footer__container {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    flex-direction: column;
 
     padding-top: 60px;
     padding-bottom: 60px;
 }
- 
+
+// .page-footer__address-container{
+
+// }
+
 .address-list__item {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
     &:last-child {
-            margin-bottom: 0;
-        }
+        margin-bottom: 0;
+    }
 }
 
 .address-list__link:hover,
@@ -45,6 +49,7 @@
 }
 
 .footer-smlist__call {
+    padding-top: 60px;
     margin-bottom: 20px;
 
     @include font (700, 14px, 1.33, 00.03em, var(--body-background-color));
@@ -78,20 +83,27 @@
 
 .footer-form {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-form__call {
+    padding-top: 60px;
     margin-bottom: 20px;
 
     @include font (700, 14px, 1.33, 00.03em, var(--body-background-color));
     text-transform: uppercase;
 }
 
+.footer-form__label{
+    width: 100%;
+}
+
 .footer-form__input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     padding: 15px 16px;
-    margin-right: 12px;
+    margin-bottom: 20px;
 
     border: 1px solid var(--footer-input-border-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -131,3 +143,145 @@
 .footer-form__button_icon {
     fill: var(--body-background-color);
 }
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    
+}
+
+// .page-footer {
+//     background-color: var(--footer-background-color);
+// }
+
+// .page-footer__container {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: baseline;
+
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+// }
+ 
+// .address-list__item {
+//     margin-bottom: 9px;
+//     &:last-child {
+//             margin-bottom: 0;
+//         }
+// }
+
+// .address-list__link:hover,
+// .address-list__link:focus {
+//     color: var(--accent-blue-color);
+// }
+
+// .address-list__link_address {
+//     transition: color var(--main-transition-rule);
+
+//     font-style: normal;
+//     @include font (400, 14px, 1.5, 00.03em, var(--body-background-color));
+// }
+
+// .address-list__link_contact {
+//     transition: color var(--main-transition-rule);
+
+//     font-style: normal;
+//     @include font (400, 14px, 1.71, 00.03em, var(--address-text-color));
+// }
+
+// .footer-smlist {
+//     list-style: none;
+//     display: flex;
+//     justify-content: center;
+//     column-gap: 10px;
+// }
+
+// .footer-smlist__call {
+//     margin-bottom: 20px;
+
+//     @include font (700, 14px, 1.33, 00.03em, var(--body-background-color));
+//     text-transform: uppercase;
+// }
+
+// .footer-smlist__link {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 44px;
+//     height: 44px;
+
+//     transition: background-color var(--main-transition-rule);
+
+//     border-radius: 50%;
+//     background-color: var(--footer-smlist-icon-color);
+
+//     &:hover,
+//     &:focus {
+//             background-color: var(--accent-blue-color);
+//         }
+// }
+
+// .footer-smlist__icon {
+//     width: 20px;
+//     height: 20px;
+
+//     fill: var(--body-background-color);
+// }
+
+// .footer-form {
+//     display: flex;
+// }
+
+// .footer-form__call {
+//     margin-bottom: 20px;
+
+//     @include font (700, 14px, 1.33, 00.03em, var(--body-background-color));
+//     text-transform: uppercase;
+// }
+
+// .footer-form__input {
+//     width: 358px;
+//     height: 50px;
+//     padding: 15px 16px;
+//     margin-right: 12px;
+
+//     border: 1px solid var(--footer-input-border-color);
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//     border-radius: 4px;
+//     background-color: transparent;
+
+//     transition: border var(--main-transition-rule);
+
+//     @include font (400, 16px, 1.25, 00.03em, var(--body-background-color));
+
+//     &::placeholder {
+//             font-weight: 400;
+//             font-size: 16px;
+//             line-height: 1.25;
+//             letter-spacing: 0.03em;
+//             color: var(--address-text-color);
+//         }
+// }
+
+// .footer-form__button {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     width: 200px;
+//     height: 50px;
+//     padding: 10px 28px;
+
+//     background-color: var(--accent-blue-color);
+//     box-shadow: 0px 4px 4px var(--form-submit-button-shadow-color);
+//     border: none;
+//     border-radius: 4px;
+
+//     @include font (700, 16px, 1.88, 00.06em, var(--body-background-color));
+//     cursor: pointer;
+// }
+
+// .footer-form__button_icon {
+//     fill: var(--body-background-color);
+// }
