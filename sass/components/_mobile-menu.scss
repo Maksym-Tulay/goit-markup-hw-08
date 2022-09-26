@@ -4,15 +4,12 @@
         top: 0;
         left: 0;
         z-index: 100;
-        width: 100%;
-        height: 100%;
-        background-color: var(--body-background-color);
-
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
         transition: opacity var(--main-transition-rule), 
         visibility var(--main-transition-rule);
+
     }
 
     .mobile-menu.is-open{
@@ -20,6 +17,24 @@
         visibility: visible;
         pointer-events: auto;
     }
+
+    .mobile-menu__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        width: 100vw;
+        height: 100vh;
+        padding: 48px 40px;
+        overflow-y: scroll;
+
+        background-color: var(--body-background-color);
+    }
+
+    .mobile-menu__contacts-container{
+        margin-top: auto;
+    }
+
     .mobile-menu__close-button {
         position: absolute;
         top: 10px;
@@ -40,17 +55,57 @@
         fill: var(--body-text-color);
     }
 
-    .mobile-menu__list {
-        
+    .mobile-menu__item:not(:last-child) {
+        margin-bottom: 32px;
     }
 
-    .mobile-menu__item {}
+    .mobile-menu__link {
+        @include font (500, 40px, 1.18, 00.02em, var(--body-text-color));
+        transition: color var(--main-transition-rule);
+        
+        &:hover,
+        &:focus {
+            color: var(--accent-blue-color);
+        }
+        .mobile-menu__item-current & {
+            color: var(--accent-blue-color);
+        }
+    }
+    
+    .mobile-menu__contact-list{
+        padding-top: 302px;
+    }
 
-    .mobile-menu__link {}
+    .mobile-menu__contact-item:not(:last-child) {
+        margin-bottom: 32px;
+    }
 
-    .moble-menu__container {
-        position: relative;
-        padding-left: 40px;
+    .mobile-menu__contact-phone{
+        @include font (500, 34px, 1.18, 00.02em, var(--accent-blue-color));
+    }
+    .mobile-menu__contact-mail {
+        @include font (500, 24px, 1.17, 00.02em, var(--list-text-color));
+    }
+
+    .mobile-menu__smlist{
+        display: flex;
+        align-items: center;
+        padding-top: 64px;
+    }
+
+    .mobile-menu__smlist-item{
+        margin-right: 10px;
+
+        &:not(:last-child)::after{
+            content: " ";
+            margin-left: 10px;
+            border-right: 1px solid var(--mobile-menu-smlist-border);
+            transform: rotate(90deg);
+        }
+    }
+
+    .mobile-menu__smlist-link{
+        @include font (500, 18px, 1.22, 00.02em, var(--accent-blue-color));
     }
 }
 
