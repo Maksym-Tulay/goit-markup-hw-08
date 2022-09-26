@@ -47,24 +47,25 @@
     }
 
     .menu__item {
-            position: relative;
+        position: relative;
     }
     
     .menu__link {
-                display: block;
-                padding-top: 32px;
-                padding-bottom: 32px;
-                transition: color var(--main-transition-rule);
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        @include font (500, 14px, 1.14, 00.02em, var(--body-text-color));
+
+        transition: color var(--main-transition-rule);
     
-                @include font (500, 14px, 1.14, 00.02em, var(--body-text-color));
-    
-               .menu__item &:hover,
-               .menu__item &:focus{
-                color: var(--accent-blue-color);
-            }
-            .menu__item_current &{
-                color: var(--accent-blue-color);
-            }
+        .menu__item &:hover,
+        .menu__item &:focus{
+            color: var(--accent-blue-color);
+        }
+        .menu__item_current &{
+            color: var(--accent-blue-color);
+        }
     }           
     
     .menu__item_current::after {
@@ -74,33 +75,25 @@
         height: 4px;
         content: "";
         background-color: var(--accent-blue-color);
-    
         border-radius: 2px;
-    }
-
-    .contact-list {
-            display: block;
-            column-gap: 50px;
     }
     
     .contact-list__link {
-            display: block;
-            // align-items: center;
-            // justify-content: center;
-            // column-gap: 10px;
-            margin-left: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        @include font (500, 12px, 1.0, 00.02em, var(--list-text-color));
+
+        transition: color var(--main-transition-rule);
     
-            transition: color var(--main-transition-rule);
-    
-            @include font (500, 14px, 1.14, 00.02em, var(--list-text-color));
-    
-            .contact-list__item &:hover,
-            .contact-list__item &:focus {
-                color: var(--accent-blue-color);
-            }
+        .contact-list__item &:hover,
+        .contact-list__item &:focus {
+            color: var(--accent-blue-color);
+        }
     }
 
-    .contact-list__link-mail{
+    .contact-list__link-mail {
         padding-top: 21px;
         padding-bottom: 5px;
     }
@@ -110,21 +103,29 @@
         padding-bottom: 21px;
     }
     
-    .contact-list__icon {
-        margin-left: auto;
-            fill: currentColor;
+    .contact-list__icon-envelope {
+        margin-right: 8px;
+        width: 14px;
+        height: 10px;
+        fill: currentColor;
+    }
+
+    .contact-list__icon-smartphone {
+        margin-right: 8px;
+        width: 10px;
+        height: 14px;
+        fill: currentColor;
     }
 
     .open-mobile-menu-button {
         display: none;
     }
-
 }
 
 @media screen and (min-width: 1200px) {
     .contact-list {
         display: flex;
-            column-gap: 50px;
+        column-gap: 50px;
     }
     .contact-list__link {
         display: flex;
@@ -133,6 +134,18 @@
         column-gap: 10px;
         padding-top: 32px;
         padding-bottom: 32px;
+
+        @include font (500, 14px, 1.14, 00.02em, var(--list-text-color));
+    }
+    .contact-list__icon-envelope {
+        margin-right: 0px;
+        width: 16px;
+        height: 12px;
+    }
+    .contact-list__icon-smartphone {
+        margin-right: 0px;
+        width: 10px;
+        height: 16px;
     }
 }
 

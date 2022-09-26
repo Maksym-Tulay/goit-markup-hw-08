@@ -241,12 +241,12 @@ textarea {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    transition: color var(--main-transition-rule);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--body-text-color);
+    transition: color var(--main-transition-rule);
   }
   .menu__item .menu__link:hover, .menu__item .menu__link:focus {
     color: var(--accent-blue-color);
@@ -263,19 +263,16 @@ textarea {
     background-color: var(--accent-blue-color);
     border-radius: 2px;
   }
-  .contact-list {
-    display: block;
-    column-gap: 50px;
-  }
   .contact-list__link {
-    display: block;
-    margin-left: auto;
-    transition: color var(--main-transition-rule);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1;
     letter-spacing: 0.02em;
     color: var(--list-text-color);
+    transition: color var(--main-transition-rule);
   }
   .contact-list__item .contact-list__link:hover, .contact-list__item .contact-list__link:focus {
     color: var(--accent-blue-color);
@@ -288,8 +285,16 @@ textarea {
     padding-top: 5px;
     padding-bottom: 21px;
   }
-  .contact-list__icon {
-    margin-left: auto;
+  .contact-list__icon-envelope {
+    margin-right: 8px;
+    width: 14px;
+    height: 10px;
+    fill: currentColor;
+  }
+  .contact-list__icon-smartphone {
+    margin-right: 8px;
+    width: 10px;
+    height: 14px;
     fill: currentColor;
   }
   .open-mobile-menu-button {
@@ -308,6 +313,21 @@ textarea {
     column-gap: 10px;
     padding-top: 32px;
     padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--list-text-color);
+  }
+  .contact-list__icon-envelope {
+    margin-right: 0px;
+    width: 16px;
+    height: 12px;
+  }
+  .contact-list__icon-smartphone {
+    margin-right: 0px;
+    width: 10px;
+    height: 16px;
   }
 }
 .page-footer {
