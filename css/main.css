@@ -821,6 +821,9 @@ textarea {
   .advantages-list__item {
     width: 354px;
   }
+  .advantages-list__item-header {
+    text-align: left;
+  }
 }
 @media screen and (min-width: 1200px) {
   .advantages-section__container {
@@ -849,6 +852,9 @@ textarea {
     margin-bottom: 30px;
     border-radius: 4px;
     /* outline: 1px solid black; */
+  }
+  .advantages-list__item-header {
+    text-align: left;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -917,42 +923,40 @@ textarea {
 }
 .teamlist-section {
   background-color: var(--grey-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
   /* outline: 2px dashed orchid; */
 }
 
 .teamlist-section__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  color: var(--body-text-color);
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .teamlist {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: block;
 }
 
 .teamlist__item {
   background-color: var(--body-background-color);
-  width: 270px;
-  margin-right: 30px;
+  width: 450px;
+  margin-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .teamlist__item:last-child {
-  margin-right: 0;
+  margin-bottom: 0;
 }
 
 .employee {
   margin-top: 0px;
-  padding: 30px 0;
+  padding: 30px 0 24px 0;
   background-color: var(--body-background-color);
 }
 
@@ -963,6 +967,10 @@ textarea {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--body-text-color);
+}
+
+.employee__photo {
+  width: 450px;
 }
 
 .employee__position {
@@ -1005,6 +1013,36 @@ textarea {
   fill: var(--body-background-color);
 }
 
+@media screen and (min-width: 768px) {
+  .teamlist {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .teamlist__item {
+    width: 354px;
+  }
+  .teamlist__item:nth-child(n+3) {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .teamlist {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .teamlist__item {
+    width: 270px;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  .teamlist__item:last-child {
+    margin-right: 0;
+  }
+}
 .clientlist-section {
   text-align: center;
   padding-top: 94px;

@@ -80,6 +80,10 @@
     .advantages-list__item {
         width: 354px;
     }
+
+    .advantages-list__item-header {
+        text-align: left;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -99,7 +103,7 @@
         margin-bottom: 0;
 
         &:last-child {
-                margin-right: 0;
+            margin-right: 0;
         }
 
         &::before {
@@ -115,6 +119,9 @@
                 /* outline: 1px solid black; */
         }
     }
+    .advantages-list__item-header{
+        text-align: left;
+        }
 }
 
 
