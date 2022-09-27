@@ -1,28 +1,29 @@
-.clientlist-section {
+.clientlist-section__container {
     text-align: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     background-color: var(--body-background-color);
 }
 
 .clientlist__title {
-    margin-bottom: 50px;
-    @include font (700, 36px, 1.17, 00.03em, var(--body-text-color));  
+    margin-bottom: 30px;
+    @include font (700, 28px, 1.18, 00.03em, var(--body-text-color));
 }
+
 
 .clientlist {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-
-    column-gap: 30px;
+    gap: 30px;
 }
 
 .clientlist__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
 
     transition: fill var(--main-transition-rule),
@@ -52,3 +53,80 @@
         fill: var(--accent-blue-color);
     }
 }
+
+@media screen and (min-width: 768px){
+    .clientlist__link{
+        width: 226px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .clientlist-section__container{
+        padding: 94px 0;
+    }
+
+    .clientlist__title {
+        margin-bottom: 50px;
+        @include font (700, 36px, 1.17, 00.03em, var(--body-text-color));
+    }
+    .clientlist__link {
+        width: 170px;
+        height: 92px;
+    }
+}
+
+
+// .clientlist-section {
+//     text-align: center;
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+
+//     background-color: var(--body-background-color);
+// }
+
+// .clientlist__title {
+//     margin-bottom: 50px;
+//     @include font (700, 36px, 1.17, 00.03em, var(--body-text-color));  
+// }
+
+// .clientlist {
+//     display: flex;
+//     justify-content: center;
+
+//     column-gap: 30px;
+// }
+
+// .clientlist__link {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 170px;
+//     height: 92px;
+
+//     transition: fill var(--main-transition-rule),
+//         border-color var(--main-transition-rule);
+
+//     border: 1px solid;
+//     border-color: var(--socialmedia-icon-color);
+//     border-radius: 4px;
+
+//     &:hover,
+//     &:focus {
+//         fill: var(--accent-blue-color);
+//         border-color: var(--accent-blue-color);
+//     }
+// }
+
+// .clientlist__icon {
+//     width: 106px;
+//     height: 60px;
+
+//     transition: fill var(--main-transition-rule);
+
+//     fill: var(--socialmedia-icon-color);
+
+//     .clientlist__link:focus &, 
+//     .clientlist__link:hover &{
+//         fill: var(--accent-blue-color);
+//     }
+// }

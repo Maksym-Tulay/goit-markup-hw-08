@@ -19,7 +19,7 @@
 
 .teamlist__item {
     background-color: var(--body-background-color);
-    width: 450px;
+    width: 100%;
     // row-gap: 30px;
     margin-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
@@ -115,6 +115,7 @@
         margin-bottom: 50px;
         @include font (700, 36px, 1.17, 00.03em, var(--body-text-color));
     }
+
     .teamlist {
         list-style: none;
         display: flex;
@@ -131,7 +132,6 @@
             margin-right: 0;
         }
     }
-
 }
 
 
