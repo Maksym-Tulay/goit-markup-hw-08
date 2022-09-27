@@ -22,7 +22,7 @@ screen and (min-resolution: 1dppx) and (max-width: 767px) {
         background-image: linear-gradient(to right,
             var(--hero-image-overlay-color),
             var(--hero-image-overlay-color)),
-            url(../images/mobile-images/hero-mobile.jpg);
+            url('../images/mobile-images/hero-mobile.jpg');
     }
 }
 
@@ -33,7 +33,7 @@ screen and (min-resolution: 1dppx) and (max-width: 767px) {
         background-image: linear-gradient(to right,
                 var(--hero-image-overlay-color),
                 var(--hero-image-overlay-color)),
-            url(../images/mobile-images/hero-mobile.webp);
+            url('../images/mobile-images/hero-mobile.webp');
     }
 }
 @media screen and (min-device-pixel-ratio:2) and (max-width: 767px),
@@ -43,7 +43,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         background-image: linear-gradient(to right,
                 var(--hero-image-overlay-color),
                 var(--hero-image-overlay-color)),
-            url(../images/mobile-images/hero-mobile@2x.jpg);
+            url('../images/mobile-images/hero-mobile@2x.jpg');
     }
 }
 
@@ -54,7 +54,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         background-image: linear-gradient(to right,
                 var(--hero-image-overlay-color),
                 var(--hero-image-overlay-color)),
-            url(../images/mobile-images/hero-mobile@2x.webp);
+            url('../images/mobile-images/hero-mobile@2x.webp');
     }
 }
 
@@ -65,7 +65,7 @@ screen and (min-resolution: 1dppx) and (min-width: 768px) {
         background-image: linear-gradient(to right,
             var(--hero-image-overlay-color),
             var(--hero-image-overlay-color)),
-            url(../images/tablet-images/hero-tablet.jpg);
+            url('../images/tablet-images/hero-tablet.jpg');
     }
 }
 
@@ -76,7 +76,7 @@ screen and (min-resolution: 1dppx) and (min-width: 768px) {
         background-image: linear-gradient(to right,
                 var(--hero-image-overlay-color),
                 var(--hero-image-overlay-color)),
-            url(../images/tablet-images/hero-tablet.webp);
+            url('../images/tablet-images/hero-tablet.webp');
     }
 }
 
@@ -87,7 +87,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         background-image: linear-gradient(to right,
                 var(--hero-image-overlay-color),
                 var(--hero-image-overlay-color)),
-             url(../images/tablet-images/hero-tablet@2x.jpg);
+             url('../images/tablet-images/hero-tablet@2x.jpg');
     }    
 }
 
@@ -98,7 +98,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         background-image: linear-gradient(to right,
                 var(--hero-image-overlay-color),
                 var(--hero-image-overlay-color)),
-            url(../images/tablet-images/hero-tablet@2x.webp);
+            url('../images/tablet-images/hero-tablet@2x.webp');
     }
 }
 
@@ -109,7 +109,7 @@ screen and (min-resolution: 1dppx) and (min-width: 1200px) {
         background-image: linear-gradient(to right,
                 var(--hero-image-overlay-color),
                 var(--hero-image-overlay-color)),
-            url(../images/desktop-images/hero-desktop.jpg);
+            url('../images/desktop-images/hero-desktop.jpg');
     }
 }
 
@@ -120,7 +120,7 @@ screen and (min-resolution: 1dppx) and (min-width: 1200px) {
         background-image: linear-gradient(to right,
                 var(--hero-image-overlay-color),
                 var(--hero-image-overlay-color)),
-            url(../images/desktop-images/hero-desktop.webp);
+            url('../images/desktop-images/hero-desktop.webp');
     }
 }
 
@@ -131,7 +131,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         background-image: linear-gradient(to right,
                 var(--hero-image-overlay-color),
                 var(--hero-image-overlay-color)),
-            url(../images/desktop-images/hero-desktop@2x.jpg);
+            url('../images/desktop-images/hero-desktop@2x.jpg');
     }
 }
 
@@ -142,7 +142,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         background-image: linear-gradient(to right,
                 var(--hero-image-overlay-color),
                 var(--hero-image-overlay-color)),
-            url(../images/desktop-images/hero-desktop@2x.webp);
+            url('../images/desktop-images/hero-desktop@2x.webp');
     }
 }
 
