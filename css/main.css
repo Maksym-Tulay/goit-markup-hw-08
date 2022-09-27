@@ -775,19 +775,19 @@ textarea {
 }
 
 .advantages-list__item_icon-antenna::before {
-  background-image: url(../images/antenna.svg);
+  background-image: url("../images/antenna.svg");
 }
 
 .advantages-list__item_icon-clock::before {
-  background-image: url(../images/clock.svg);
+  background-image: url("../images/clock.svg");
 }
 
 .advantages-list__item_icon-diagram::before {
-  background-image: url(../images/diagram.svg);
+  background-image: url("../images/diagram.svg");
 }
 
 .advantages-list__item_icon-astronaut::before {
-  background-image: url(../images/astronaut.svg);
+  background-image: url("../images/astronaut.svg");
 }
 
 .advantages-list__item-header {
@@ -834,7 +834,7 @@ textarea {
   }
   .advantages-list__item {
     width: 270px;
-    margin-right: 30px;
+    margin-bottom: 0;
   }
   .advantages-list__item:last-child {
     margin-right: 0;
@@ -851,66 +851,70 @@ textarea {
     /* outline: 1px solid black; */
   }
 }
-.worklist-section {
-  margin: top 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  transition: color var(--main-transition-rule);
+@media screen and (max-width: 1199px) {
+  .worklist-section__container {
+    display: none;
+  }
 }
-
-.worklist-title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--body-text-color);
-  text-align: center;
+@media screen and (min-width: 1200px) {
+  .worklist-section__container {
+    display: block;
+  }
+  .worklist-section {
+    margin: top 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    transition: color var(--main-transition-rule);
+  }
+  .worklist-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--body-text-color);
+    text-align: center;
+  }
+  .worklist {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .worklist__link {
+    position: relative;
+  }
+  .worklist__link:hover, .worklist__link:focus {
+    color: var(--accent-blue-color);
+  }
+  .worklist__descr {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, 0%);
+    opacity: 0;
+    transition: opacity var(--main-transition-rule);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--body-background-color);
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--item-overlay-backgroundcolor);
+  }
+  .worklist__link:hover .worklist__descr, .worklist__link:focus .worklist__descr {
+    opacity: 1;
+  }
+  .worklist__image {
+    display: block;
+  }
 }
-
-.worklist {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.worklist__link {
-  position: relative;
-}
-.worklist__link:hover, .worklist__link:focus {
-  color: var(--accent-blue-color);
-}
-
-.worklist__descr {
-  position: absolute;
-  bottom: 0%;
-  left: 50%;
-  height: 70px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translate(-50%, 0%);
-  opacity: 0;
-  transition: opacity var(--main-transition-rule);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: var(--body-background-color);
-  text-align: center;
-  text-transform: uppercase;
-  background-color: var(--item-overlay-backgroundcolor);
-}
-.worklist__link:hover .worklist__descr, .worklist__link:focus .worklist__descr {
-  opacity: 1;
-}
-
-.worklist__image {
-  display: block;
-}
-
 .teamlist-section {
   background-color: var(--grey-background-color);
   padding-top: 94px;
