@@ -107,6 +107,14 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .teamlist-section{
+        padding: 94px 0;
+    }
+
+    .teamlist-section__title{
+        margin-bottom: 50px;
+        @include font (700, 36px, 1.17, 00.03em, var(--body-text-color));
+    }
     .teamlist {
         list-style: none;
         display: flex;
