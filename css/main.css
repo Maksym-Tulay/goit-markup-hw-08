@@ -919,6 +919,8 @@ textarea {
   }
   .worklist__image {
     display: block;
+    width: 370px;
+    height: 294px;
   }
 }
 .teamlist-section {
@@ -1126,23 +1128,19 @@ textarea {
   }
 }
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--body-background-color);
-  /* outline: 2px dashed seagreen; */
 }
 
 .gallery-navigation {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-  /* outline: 2px dashed peru; */
-}
-
-.gallery-navigation__item:nth-child(n+2) {
-  margin-left: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  row-gap: 15px;
+  width: 330px;
+  column-gap: 8px;
 }
 
 .gallery-navigation__button {
@@ -1167,20 +1165,15 @@ textarea {
 }
 
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
+  width: 450px;
+  display: block;
 }
 
 .gallery__item {
-  width: 370px;
+  margin-bottom: 30px;
 }
-.gallery__item:nth-child(n+6) {
-  margin-bottom: 0px;
-}
-.gallery__item:nth-child(3n) {
-  margin-right: 0;
+.gallery__item:last-child {
+  margin-bottom: 0;
 }
 
 .gallery__link {
@@ -1195,6 +1188,10 @@ textarea {
 .imagebox {
   position: relative;
   overflow: hidden;
+}
+
+.imagebox__picture {
+  width: 450px;
 }
 
 .imagebox__text {
@@ -1243,6 +1240,21 @@ textarea {
   color: var(--list-text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+  }
+  .gallery__item {
+    margin-bottom: 0;
+  }
+  .imagebox__picture {
+    width: 354px;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
