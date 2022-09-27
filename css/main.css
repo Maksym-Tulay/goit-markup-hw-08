@@ -608,26 +608,85 @@ textarea {
 }
 .index-hero {
   margin-bottom: 0;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
-  max-width: 1600px;
-  max-height: 600px;
+  width: 100%;
+  max-height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--hero-image-overlay-color);
-  background-image: linear-gradient(to right, var(--hero-image-overlay-color), var(--hero-image-overlay-color)), url(../images/hero-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+@media screen and (min-device-pixel-ratio: 1) and (max-width: 767px), screen and (min-resolution: 96dpi) and (max-width: 767px), screen and (min-resolution: 1dppx) and (max-width: 767px) {
+  .index-hero {
+    background-image: linear-gradient(to right, var(--hero-image-overlay-color), var(--hero-image-overlay-color)), url(../images/mobile-images/hero_mobile.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 1) and (max-width: 767px), screen and (min-resolution: 96dpi) and (max-width: 767px), screen and (min-resolution: 1dppx) and (max-width: 767px) {
+  .index-hero {
+    background-image: linear-gradient(to right, var(--hero-image-overlay-color), var(--hero-image-overlay-color)), url(../images/mobile-images/hero_mobile.webp);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .index-hero {
+    background-image: linear-gradient(to right, var(--hero-image-overlay-color), var(--hero-image-overlay-color)), url(../images/mobile-images/hero_mobile@2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .index-hero {
+    background-image: linear-gradient(to right, var(--hero-image-overlay-color), var(--hero-image-overlay-color)), url(../images/mobile-images/hero_mobile@2x.webp);
+  }
+}
+@media screen and (min-device-pixel-ratio: 1) and (min-width: 768px), screen and (min-resolution: 96dpi) and (min-width: 768px), screen and (min-resolution: 1dppx) and (min-width: 768px) {
+  .index-hero {
+    background-image: linear-gradient(to right, var(--hero-image-overlay-color), var(--hero-image-overlay-color)), url(../images/tablet-images/hero_tablet.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 1) and (min-width: 768px), screen and (min-resolution: 96dpi) and (min-width: 768px), screen and (min-resolution: 1dppx) and (min-width: 768px) {
+  .index-hero {
+    background-image: linear-gradient(to right, var(--hero-image-overlay-color), var(--hero-image-overlay-color)), url(../images/tablet-images/hero_tablet.webp);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .index-hero {
+    background-image: linear-gradient(to right, var(--hero-image-overlay-color), var(--hero-image-overlay-color)), url(../images/tablet-images/hero_tablet@2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .index-hero {
+    background-image: linear-gradient(to right, var(--hero-image-overlay-color), var(--hero-image-overlay-color)), url(../images/tablet-images/hero_tablet@2x.webp);
+  }
+}
+@media screen and (min-device-pixel-ratio: 1) and (min-width: 1200px), screen and (min-resolution: 96dpi) and (min-width: 1200px), screen and (min-resolution: 1dppx) and (min-width: 1200px) {
+  .index-hero {
+    background-image: linear-gradient(to right, var(--hero-image-overlay-color), var(--hero-image-overlay-color)), url(../images/desktop-images/hero_desktop.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 1) and (min-width: 1200px), screen and (min-resolution: 96dpi) and (min-width: 1200px), screen and (min-resolution: 1dppx) and (min-width: 1200px) {
+  .index-hero {
+    background-image: linear-gradient(to right, var(--hero-image-overlay-color), var(--hero-image-overlay-color)), url(../images/desktop-images/hero_desktop.webp);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .index-hero {
+    background-image: linear-gradient(to right, var(--hero-image-overlay-color), var(--hero-image-overlay-color)), url(../images/desktop-images/hero_desktop@2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .index-hero {
+    background-image: linear-gradient(to right, var(--hero-image-overlay-color), var(--hero-image-overlay-color)), url(../images/desktop-images/hero_desktop@2x.webp);
+  }
+}
 .index-hero__title {
-  width: 696px;
+  width: 360px;
   margin: 0 auto 30px auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   color: var(--body-background-color);
   text-align: center;
@@ -635,7 +694,7 @@ textarea {
 }
 
 .index-hero__button {
-  width: 216px;
+  width: 200px;
   height: 50px;
   transition: background-color var(--main-transition-rule);
   background-color: var(--accent-blue-color);
@@ -652,6 +711,31 @@ textarea {
   background-color: var(--accent-blue-color);
 }
 
+@media screen and (min-width: 768px) {
+  .index-hero {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .index-hero {
+    max-width: 1600px;
+    max-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .index-hero__title {
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--body-background-color);
+  }
+  .index-hero__button {
+    width: 216px;
+    height: 50px;
+  }
+}
 .advantages-section {
   margin: top 0;
   padding-top: 94px;
