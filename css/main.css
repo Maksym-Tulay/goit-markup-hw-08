@@ -548,8 +548,8 @@ textarea {
 }
 
 .footer-form__button {
-  display: flex;
-  justify-content: space-between;
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
   width: 200px;
   height: 50px;
@@ -567,6 +567,7 @@ textarea {
 }
 
 .footer-form__button_icon {
+  margin-left: 12px;
   fill: var(--body-background-color);
 }
 
@@ -604,6 +605,9 @@ textarea {
   .footer-form__input {
     width: 358px;
     margin-bottom: 0;
+  }
+  .footer-form__button_icon {
+    margin-left: 10px;
   }
 }
 .index-hero {
@@ -1163,20 +1167,21 @@ textarea {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.gallery {
-  width: 450px;
-  display: block;
+.gallery__item {
+  width: 100%;
 }
 
-.gallery__item {
-  margin-bottom: 30px;
-}
-.gallery__item:last-child {
-  margin-bottom: 0;
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 }
 
 .gallery__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-sizing var(--main-transition-rule), box-shadow var(--main-transition-rule);
 }
 .gallery__link:hover, .gallery__link:focus {
@@ -1187,10 +1192,6 @@ textarea {
 .imagebox {
   position: relative;
   overflow: hidden;
-}
-
-.imagebox__picture {
-  width: 450px;
 }
 
 .imagebox__text {
@@ -1214,6 +1215,7 @@ textarea {
 }
 
 .descr-container {
+  flex-grow: 1;
   margin-top: 0px;
   padding: 20px 24px;
   background-color: var(--body-background-color);
@@ -1234,24 +1236,46 @@ textarea {
 .descr-container__text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--list-text-color);
 }
 
 @media screen and (min-width: 768px) {
+  .gallery-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+  }
   .gallery {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     gap: 30px;
   }
   .gallery__item {
+    width: 354px;
     margin-bottom: 0;
   }
-  .imagebox__picture {
-    width: 354px;
+  .descr-container {
+    flex-grow: 1;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .gallery-navigation {
+    margin-bottom: 50px;
+  }
+  .gallery__item {
+    width: 370px;
+    margin-bottom: 0;
   }
 }
 .backdrop {
