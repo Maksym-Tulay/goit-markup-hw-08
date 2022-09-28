@@ -1,12 +1,8 @@
 .index-hero {
-    margin-bottom: 0;
-    padding-top: 118px;
-    padding-bottom: 118px;
-    text-align: center;
     width: 100%;
-    max-height: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 0 auto;
+    padding: 118px 60px;
+    text-align: center;
     background-color: var(--hero-image-overlay-color);
 
     background-repeat: no-repeat;
@@ -15,24 +11,23 @@
 }
 
 .index-hero__title {
-    width: 360px;
     margin: 0 auto 30px auto;
 
     @include font (900, 26px, 1.62, 00.06em, var(--body-background-color));
-    text-align: center;
     text-transform: uppercase;
 }
 
 .index-hero__button {
     width: 200px;
     height: 50px;
+    background-color: var(--accent-blue-color);
 
     transition: background-color var(--main-transition-rule);
 
-    background-color: var(--accent-blue-color);
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    
     @include font (700, 16px, 1.88, 00.06em, var(--body-background-color));
 
     &:focus {
@@ -81,6 +76,12 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
                 var(--hero-image-overlay-color),
                 var(--hero-image-overlay-color)),
             url('../images/mobile-images/hero-mobile@2x.webp');
+    }
+}
+
+@media screen and (min-width:480px) {
+    .index-hero__title{
+        width: 360px;
     }
 }
 
