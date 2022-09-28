@@ -1,46 +1,61 @@
-.modal-window {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    .modal-window {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 450px;
+        height: auto;
 
-    width: 528px;
-    height: 581px;
+        padding: 40px;
 
-    padding: 40px;
+        transform: translate(-50%, -50%);
+        transition: transform var(--modal-window-transition-rule);
 
-    transform: translate(-50%, -50%);
-    transition: transform var(--modal-window-transition-rule);
+        background-color: var(--body-background-color);
+        border-radius: 4px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
 
-    background-color: var(--body-background-color);
+    .modal-window__close-button {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: var(--body-background-color);
+        border: 1px solid var(--backdrop-background-color);
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .modal-window__icon {
+        width: 18px;
+        height: 18px;
+
+        fill: var(--body-text-color);
+
+        transition: fill var(--main-transition-rule);
+
+        .modal-window__close-button:hover &,
+        .modal-window__close-button:focus & {
+            fill: var(--accent-blue-color);
+        }
 }
 
-.modal-window__close-button {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: var(--body-background-color);
-    border: 1px solid var(--backdrop-background-color);
-    border-radius: 15px;
-    cursor: pointer;
+@media screen and (max-width:479px) {
+    .modal-window {
+        width: calc(100% - 30px);
+    }
 }
 
-.modal-window__icon{
-    width: 18px;
-    height: 18px;
 
-    fill: var(--body-text-color);
-
-    transition: fill var(--main-transition-rule);
-
-    .modal-window__close-button:hover &,
-    .modal-window__close-button:focus & {
-        fill: var(--accent-blue-color);
+@media screen and (min-width: 1200px){
+    .modal-window{
+        width: 528px;
     }
 }

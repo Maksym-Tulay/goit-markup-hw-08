@@ -1142,7 +1142,7 @@ textarea {
   justify-content: flex-start;
   margin-bottom: 40px;
   row-gap: 15px;
-  width: 330px;
+  max-width: 330px;
   column-gap: 8px;
 }
 
@@ -1201,7 +1201,8 @@ textarea {
   width: 100%;
   height: 100%;
   background-color: var(--portfolio-overlay-color);
-  padding: 63px 24px;
+  padding: 77px 24px;
+  overflow: auto;
   transform: translatey(101%);
   transition: transform var(--main-transition-rule);
   font-weight: 400;
@@ -1247,7 +1248,7 @@ textarea {
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    width: 100%;
+    max-width: 100%;
   }
   .gallery {
     display: flex;
@@ -1260,6 +1261,9 @@ textarea {
   .gallery__item {
     width: 354px;
     margin-bottom: 0;
+  }
+  .imagebox__text {
+    padding: 63px 24px;
   }
   .descr-container {
     flex-grow: 1;
@@ -1282,6 +1286,8 @@ textarea {
   position: fixed;
   top: 0;
   left: 0;
+  padding-left: 15px;
+  padding-right: 15px;
   visibility: visible;
   opacity: 1;
   transition: opacity var(--modal-window-transition-rule), visibility var(--modal-window-transition-rule);
@@ -1299,12 +1305,14 @@ textarea {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: auto;
   padding: 40px;
   transform: translate(-50%, -50%);
   transition: transform var(--modal-window-transition-rule);
   background-color: var(--body-background-color);
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .modal-window__close-button {
@@ -1332,6 +1340,16 @@ textarea {
   fill: var(--accent-blue-color);
 }
 
+@media screen and (max-width: 479px) {
+  .modal-window {
+    width: calc(100% - 30px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    width: 528px;
+  }
+}
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -1434,8 +1452,8 @@ textarea {
   justify-content: center;
   margin-bottom: 30px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--list-text-color);
 }
@@ -1473,15 +1491,7 @@ textarea {
   position: relative;
   color: var(--accent-blue-color);
   outline: none;
-}
-.modal-form__check-link::after {
-  display: block;
-  position: absolute;
-  top: 75%;
-  width: 100%;
-  height: 1px;
-  content: "";
-  background-color: var(--accent-blue-color);
+  text-decoration: underline;
 }
 
 .modal-form__button {
@@ -1499,4 +1509,14 @@ textarea {
   letter-spacing: 0.06em;
   color: var(--body-background-color);
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__check-field {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--list-text-color);
+  }
 }/*# sourceMappingURL=main.css.map */

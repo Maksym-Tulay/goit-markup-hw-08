@@ -3,19 +3,21 @@
     top: 0;
     left: 0;
 
+    padding-left: 15px;
+    padding-right: 15px;
+
     visibility: visible;
     opacity: 1;
 
     transition: opacity var(--modal-window-transition-rule),
         visibility var(--modal-window-transition-rule);
-
     width: 100%;
     height: 100%;
     background-color: var(--backdrop-background-color);
 
     &.hidden__backdrop {
-            visibility: hidden;
-            opacity: 0;
-            pointer-events: none;
-        }
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
 }

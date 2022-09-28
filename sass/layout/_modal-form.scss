@@ -97,7 +97,7 @@
     justify-content: center;
     margin-bottom: 30px;
 
-    @include font (400, 14px, 1.71, 00.03em, var(--list-text-color));
+    @include font (400, 12px, 1.17, 00.03em, var(--list-text-color));
 }
 
 .modal-form__check {
@@ -134,16 +134,7 @@
     position: relative;
     color: var(--accent-blue-color);
     outline: none;
-
-    &::after {
-        display: block;
-        position: absolute;
-        top: 75%;
-        width: 100%;
-        height: 1px;
-        content: "";
-        background-color: var(--accent-blue-color);
-    }
+    text-decoration: underline;
 }
 
 .modal-form__button {
@@ -159,4 +150,10 @@
 
     @include font (700, 16px, 1.88, 00.06em, var(--body-background-color));
     cursor: pointer;
+}
+
+@media screen and (min-width:1200px) {
+    .modal-form__check-field {
+        @include font (400, 14px, 1.71, 00.03em, var(--list-text-color));
+    }
 }
