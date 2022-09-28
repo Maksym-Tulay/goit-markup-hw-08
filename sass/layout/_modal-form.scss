@@ -1,6 +1,7 @@
 .modal-form {
     display: flex;
     flex-direction: column;
+
 }
 
 .modal-form__title {
@@ -111,6 +112,10 @@
     width: 16px;
     height: 15px;
     margin-right: 8px;
+
+    .modal-form__check:checked+& {
+            display: none;
+        }
 }
 
 .modal-form__check-icon-checked {
@@ -120,14 +125,10 @@
     margin-right: 8px;
 
     fill: var(--accent-blue-color);
-}
 
-.modal-form__check:checked+.modal-form__check-icon-unchecked {
-    display: none;
-}
-
-.modal-form__check:checked~.modal-form__check-icon-checked {
-    display: inline;
+    .modal-form__check:checked~& {
+        display: inline;
+    }
 }
 
 .modal-form__check-link {
