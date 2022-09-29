@@ -17,10 +17,6 @@
     margin: -1px;
 }
 
-.advantages-list {
-    display: block;
-}
-
 .advantages-list__item {
     width: 100%;
     margin-bottom: 30px;
@@ -90,11 +86,6 @@
         max-width: 1200px;
         margin-bottom: 0;
         padding-top: 94px;
-    }
-
-    .advantages-list {
-        display: flex;
-        justify-content: space-between;
     }
 
     .advantages-list__item {

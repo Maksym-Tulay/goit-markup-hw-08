@@ -427,7 +427,6 @@ textarea {
 }
 
 .page-footer__container {
-  display: block;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -759,10 +758,6 @@ textarea {
   margin: -1px;
 }
 
-.advantages-list {
-  display: block;
-}
-
 .advantages-list__item {
   width: 100%;
   margin-bottom: 30px;
@@ -834,10 +829,6 @@ textarea {
     max-width: 1200px;
     margin-bottom: 0;
     padding-top: 94px;
-  }
-  .advantages-list {
-    display: flex;
-    justify-content: space-between;
   }
   .advantages-list__item {
     width: 270px;
@@ -943,10 +934,6 @@ textarea {
   color: var(--body-text-color);
   text-align: center;
   margin-bottom: 30px;
-}
-
-.teamlist {
-  display: block;
 }
 
 .teamlist__item {
