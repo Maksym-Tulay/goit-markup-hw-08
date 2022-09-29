@@ -877,7 +877,6 @@ textarea {
     text-align: center;
   }
   .worklist {
-    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
